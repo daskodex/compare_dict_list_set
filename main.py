@@ -26,7 +26,7 @@ def random_dict_insert(length):
         return True
 
 @timer
-def random_list_insert(length):
+def random_list_append(length):
     rand_list = []
     for i in range(length):
         rand_list.append(i)
