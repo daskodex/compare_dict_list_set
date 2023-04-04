@@ -25,16 +25,19 @@ def ranadom_data_insert_test(datatype, length):
             for i in range(length):
                 rand_dict[i] = i
                 print(f'\r step dict: {i}/{length}', end='')
+
         case 'listappend':
             rand_list = []
             for i in range(length):
                 rand_list.append(i)
                 print(f'\r step list random insert: {i}/{length}', end='')
+
         case 'listinsert':
             rand_list = []
             for i in range(length):
                 rand_list.insert(random.randint(0, i), i)
                 print(f'\r step list append: {i}/{length}', end='')
+
         case 'set':
             rand_set = set()
             for i in range(length):
