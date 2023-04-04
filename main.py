@@ -36,7 +36,7 @@ def random_list_append(length):
         return True
 
 @timer
-def random_list_append(length):
+def random_list_insert(length):
     rand_list = []
     for i in range(length):
         rand_list.insert(random.randint(0, i), i)
@@ -46,7 +46,19 @@ def random_list_append(length):
         return True
 
 
+@timer
+def random_set_append(length):
+    rand_set = set()
+    for i in range(length):
+        rand_set.add(i)
+        print(f'\r step list set insert: {i}/{length}', end='')
+
+    else:
+        return True
+
 if __name__ == '__main__':
     random_dict_insert(MEGABYTE)
+    random_set_append(MEGABYTE)
     random_list_append(MEGABYTE)
     random_list_insert(MEGABYTE)
+
